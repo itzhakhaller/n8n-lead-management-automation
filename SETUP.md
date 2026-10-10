@@ -185,3 +185,7 @@ Webhook
 Security Notes
 Do not commit real credentials, API keys, private spreadsheet IDs, production webhook URLs, or customer information to a public repository.
 The workflow included in this repository is a sanitized public demo intended for portfolio and demonstration purposes.
+
+## Optional Error Handling
+
+For production use, configure your own n8n Error Workflow for error notifications and monitoring.

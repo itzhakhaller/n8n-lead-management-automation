@@ -114,8 +114,9 @@
       "parameters": {
         "documentId": {
           "__rl": true,
-          "value": "YOUR_GOOGLE_SHEET_ID",
-          "mode": "id"
+          "value": "1IfsBrTuspdCwo_uVV-P7zZsY-8gexKtCBbsg8S0y4fA",
+          "mode": "list",
+          "cachedResultName": "Lead Management"
         },
         "sheetName": {
           "__rl": true,
@@ -146,7 +147,13 @@
       ],
       "id": "37a860b9-5239-491a-967d-366fff3b38f5",
       "name": "Find Existing Lead",
-      "alwaysOutputData": true
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "qyuJOXekU3C71Ea8",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -186,8 +193,9 @@
         "operation": "update",
         "documentId": {
           "__rl": true,
-          "value": "YOUR_GOOGLE_SHEET_ID",
-          "mode": "id"
+          "value": "1IfsBrTuspdCwo_uVV-P7zZsY-8gexKtCBbsg8S0y4fA",
+          "mode": "list",
+          "cachedResultName": "Lead Management"
         },
         "sheetName": {
           "__rl": true,
@@ -310,7 +318,13 @@
         -160
       ],
       "id": "189b0528-61e1-40d0-a729-2ece86a9a586",
-      "name": "Update Existing Lead"
+      "name": "Update Existing Lead",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "qyuJOXekU3C71Ea8",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -523,8 +537,9 @@
         "operation": "update",
         "documentId": {
           "__rl": true,
-          "value": "YOUR_GOOGLE_SHEET_ID",
-          "mode": "id"
+          "value": "1IfsBrTuspdCwo_uVV-P7zZsY-8gexKtCBbsg8S0y4fA",
+          "mode": "list",
+          "cachedResultName": "Lead Management"
         },
         "sheetName": {
           "__rl": true,
@@ -675,7 +690,13 @@
         -16
       ],
       "id": "6463985e-28f7-4c93-8ad9-534fa32bca5b",
-      "name": "Update Assigned Lead"
+      "name": "Update Assigned Lead",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "qyuJOXekU3C71Ea8",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -712,8 +733,9 @@
         "operation": "append",
         "documentId": {
           "__rl": true,
-          "value": "YOUR_GOOGLE_SHEET_ID",
-          "mode": "id"
+          "value": "1IfsBrTuspdCwo_uVV-P7zZsY-8gexKtCBbsg8S0y4fA",
+          "mode": "list",
+          "cachedResultName": "Lead Management"
         },
         "sheetName": {
           "__rl": true,
@@ -829,15 +851,22 @@
         320
       ],
       "id": "bf9f2e3d-9edd-4963-8452-813eaca6a548",
-      "name": "Save Invalid Lead"
+      "name": "Save Invalid Lead",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "qyuJOXekU3C71Ea8",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
         "operation": "append",
         "documentId": {
           "__rl": true,
-          "value": "YOUR_GOOGLE_SHEET_ID",
-          "mode": "id"
+          "value": "1IfsBrTuspdCwo_uVV-P7zZsY-8gexKtCBbsg8S0y4fA",
+          "mode": "list",
+          "cachedResultName": "Lead Management"
         },
         "sheetName": {
           "__rl": true,
@@ -954,14 +983,21 @@
         272
       ],
       "id": "08c3a5fd-62e4-429a-b020-720e5a6cb786",
-      "name": "Create New Lead"
+      "name": "Create New Lead",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "qyuJOXekU3C71Ea8",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
         "documentId": {
           "__rl": true,
-          "value": "YOUR_GOOGLE_SHEET_ID",
-          "mode": "id"
+          "value": "1IfsBrTuspdCwo_uVV-P7zZsY-8gexKtCBbsg8S0y4fA",
+          "mode": "list",
+          "cachedResultName": "Lead Management"
         },
         "sheetName": {
           "__rl": true,
@@ -991,7 +1027,13 @@
         272
       ],
       "id": "d88e0609-0dbe-48fa-b1c3-ae098d6b9d0e",
-      "name": "Get New Lead Row"
+      "name": "Get New Lead Row",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "qyuJOXekU3C71Ea8",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -1007,12 +1049,19 @@
         0
       ],
       "id": "d75ef580-fd02-421d-a0ba-96fcacb19a99",
-      "name": "Send Assignment Email"
+      "name": "Send Assignment Email",
+      "webhookId": "b546aba2-e260-404d-b4d6-1af4cd0be216",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "GxEGC9F0Sl0rOQBs",
+          "name": "Gmail account"
+        }
+      }
     },
     {
       "parameters": {
         "httpMethod": "POST",
-        "path": "lead-form",
+        "path": "8881a16e-9b1e-4a5b-96fe-df922947e3b8",
         "responseMode": "responseNode",
         "options": {}
       },
@@ -1023,7 +1072,8 @@
         0
       ],
       "id": "1878d9a7-0bc0-4dc4-b9f1-d35abfd448ad",
-      "name": "Receive Lead"
+      "name": "Receive Lead",
+      "webhookId": "8881a16e-9b1e-4a5b-96fe-df922947e3b8"
     },
     {
       "parameters": {
@@ -1289,14 +1339,21 @@
       ]
     }
   },
-  "active": false,
+  "active": true,
   "settings": {
     "executionOrder": "v1",
     "binaryMode": "separate",
     "timeSavedMode": "fixed",
+    "errorWorkflow": "T6urXvZb1aXE2Qn3",
     "callerPolicy": "workflowsFromSameOwner",
     "availableInMCP": false
   },
+  "versionId": "859fd9af-96f8-43a8-9730-87b901c0c411",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "dee9c96a8734da0559c3adc3d419acab38c09047c179a57c4e5a29631f23c126"
+  },
   "nodeGroups": [],
+  "id": "70AE8kUi4HVp9SGu",
   "tags": []
 }
