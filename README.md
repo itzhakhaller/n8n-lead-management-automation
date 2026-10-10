@@ -90,22 +90,29 @@ curl -X POST "YOUR_N8N_WEBHOOK_URL" \
   "message": "Interested in your service"
 }'
 
-Success Response
+```
+### Success Response
+
+```json
 {
   "success": true,
   "status": "processed",
   "message": "Lead processed successfully"
 }
+```
 
-Validation Error Response
+### Validation Error Response
+
+```json
 {
   "success": false,
   "status": "invalid",
   "message": "Lead validation failed",
   "reason": "Missing email and phone"
 }
+```
 
-Setup
+## Setup
 1. Import lead-management-public-demo.json into n8n.
 2. Connect your Google Sheets account.
 3. Connect your Gmail account.
@@ -115,48 +122,59 @@ Setup
 7. Publish the workflow.
 8. Use the production webhook URL to send leads.
 
-Required Google Sheets Structure
-Leads
-Recommended columns:
-name
-email
-phone
-source
-location
-message
-created_at
-updated_at
-assigned_to
-assigned_email
-status
+## Required Google Sheets Structure
 
-Invalid Leads
-Recommended columns:
-name
-email
-phone
-source
-location
-message
-created_at
-updated_at
-status
-invalid_reason
+### Leads
 
-Public Demo
+Recommended columns:
+
+- name
+- email
+- phone
+- source
+- location
+- message
+- created_at
+- updated_at
+- assigned_to
+- assigned_email
+- status
+
+### Invalid Leads
+
+Recommended columns:
+
+- name
+- email
+- phone
+- source
+- location
+- message
+- created_at
+- updated_at
+- status
+- invalid_reason
+
+## Public Demo
+
 This repository contains a sanitized public version of the workflow.
+
 Credentials, private Google Sheet IDs, instance-specific IDs, and production configuration are intentionally excluded.
+
 The workflow is designed to demonstrate the architecture and automation logic while allowing users to connect their own services.
 
-Use Cases
+## Use Cases
+
 This type of automation can be adapted for:
-- sales lead management
-- website contact forms
+
+- Sales lead management
+- Website contact forms
 - Facebook lead forms
 - CRM intake workflows
-- customer inquiry routing
-- agency lead distribution
-- internal sales operations
+- Customer inquiry routing
+- Agency lead distribution
+- Internal sales operations
 
-Author
+## Author
+
 Built as part of an AI & Business Automation portfolio project.
